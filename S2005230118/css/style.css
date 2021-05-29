@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    font: normal 100%;
+    font-family: PingFangSC-Regular,Microsoft YaHei,Helvetica;
+    background: #f5f7f9;
+}
+a,div,h3,span,img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.news{
+    padding: 40px 50px;
+    border-top: 1px solid #f5f7f9;
+    border-bottom: none;
+}
+.news a{
+    color: #333;
+    text-decoration: none;
+}
+.news-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.news-two{
+    position: relative;
+}
+.wenzhi{
+    padding-right: 12px;
+    font-weight: 400;
+    max-height: 90px;
+    overflow: hidden;
+    line-height: 45px;
+    font-size: 34px;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.news-three{
+    color: #b4b4b4;
+    line-height: 34px;
+    height: 34px;
+    margin-top: 15px;
+    font-size: 0;
+    letter-spacing: 0;
+    overflow: hidden;
+}
+.diyi{
+    text-overflow: ellipsis;
+    max-width: 8em;
+}
+.news-three span{
+    font-size: 24px;
+    margin-right: 12px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.news-four{
+    color: #ee1a1a;
+    font-size: 22px;
+    padding: 0 16px;
+    border: 1px solid rgba(238,26,26,.3);
+    border-radius: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+}
+.news-five{
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+.news-five img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (max-width: 769px) {
+    .news-two{
+        float:left;
+        width: 50%;
+    }
+    .news-five{
+        float: right;
+        width: 50%
+    }
+    .news-five img{
+        width: 70%;
+    }
+}
